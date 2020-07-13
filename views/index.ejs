@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+  <span>query1</span>
+  <select id="databases" name="databases">
+    <option disabled selected>Select a database</option>
+      <% databases.forEach(db => { %>
+        <option value="<%- db.datname %>"><%= db.datname %></option>
+      <% }) %>
+  </select>
+</body>
+
+</html>
