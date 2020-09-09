@@ -41,7 +41,7 @@ client.connect(err => {
 // dynamic data
 app.locals.databases = null;
 
-
+// get all the databases initially
 client.query(queries.query1, (err, result) => {
   if (err) throw err
 
